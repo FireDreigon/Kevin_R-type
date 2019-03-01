@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4985338290266516}
   m_Layer: 0
-  m_Name: HachaVikinga
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -9,72 +9,72 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1656400797379878}
+  m_RootGameObject: {fileID: 1692044627264806}
   m_IsPrefabAsset: 1
---- !u!1 &1105000608524822
+--- !u!1 &1511055281137796
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4761213337094940}
-  - component: {fileID: 212605116846283602}
+  - component: {fileID: 4573402750132304}
+  - component: {fileID: 212298320973259772}
   m_Layer: 0
-  m_Name: Sombrero_Brujo
+  m_Name: Chaleco_Vaquero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1656400797379878
+--- !u!1 &1692044627264806
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4077680968552266}
+  - component: {fileID: 4270923242568178}
   m_Layer: 0
-  m_Name: SombreroBrujo
+  m_Name: 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4077680968552266
+--- !u!4 &4270923242568178
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1656400797379878}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 1692044627264806}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4761213337094940}
+  - {fileID: 4573402750132304}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4761213337094940
+--- !u!4 &4573402750132304
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1105000608524822}
+  m_GameObject: {fileID: 1511055281137796}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.108, y: 0.112, z: -0.002}
-  m_LocalScale: {x: 0.27099282, y: 0.27099282, z: 0.27099282}
+  m_LocalPosition: {x: 0.415, y: -0.125, z: -0.16}
+  m_LocalScale: {x: 0.19582938, y: 0.19582938, z: 0.19582938}
   m_Children: []
-  m_Father: {fileID: 4077680968552266}
+  m_Father: {fileID: 4270923242568178}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &212605116846283602
+--- !u!212 &212298320973259772
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1105000608524822}
+  m_GameObject: {fileID: 1511055281137796}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -104,12 +104,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3b9470a58637b3f469fc789ba65a403a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 75ee3ef908756404ead2e6ec934e4e67, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.99, y: 3.2}
+  m_Size: {x: 5.14, y: 2.82}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
