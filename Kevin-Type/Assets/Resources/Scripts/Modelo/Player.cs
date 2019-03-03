@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Player
 {
 
@@ -9,7 +10,16 @@ public class Player
     public SkinPlayer Skin;
 
     public int HP;
-    public int Atk;
-    public int Speed;
+    public float Speed;
+    public BulletType bulletType;
+    public float DelayShoot;
+
+    public Player (int hp, int speed, float delayShoot, BulletType bulletType)
+    {
+        HP = hp;
+        Speed = speed;
+        DelayShoot = delayShoot;
+        this.bulletType = bulletType;
+    }
 
 }
