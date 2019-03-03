@@ -19,24 +19,32 @@ public class Enemy
         Speed = speed;
     }
 
-    public Enemy(EnemyType type)
+    public Enemy(EnemyType type, int Lv = 1)
     {
         Type = type;
         switch (type)
         {
             case EnemyType.Basic:
-
-                HP = 1;
-                Atk = 1;
-                Speed = 3;
-                
+                switch (Lv)
+                {
+                    default:
+                        HP = 1;
+                        Atk = 1;
+                        Speed = 3;
+                        break;
+                }              
                 break;
 
             case EnemyType.Stalker:
-
-                HP = 1;
-                Atk = 1;
-                Speed = 5.5f;
+                switch (Lv)
+                {
+                    default:
+                        HP = 1;
+                        Atk = 1;
+                        Speed = 5.5f;
+                        break;
+                }
+               
 
                 break;
 

@@ -65,6 +65,7 @@
     <Compile Include="Assets\Resources\Scripts\Controll\EnemyControll.cs" />
     <Compile Include="Assets\Resources\Scripts\Controll\PlayerControll.cs" />
     <Compile Include="Assets\Resources\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Resources\Scripts\HUDManager.cs" />
     <Compile Include="Assets\Resources\Scripts\Modelo\Bullet.cs" />
     <Compile Include="Assets\Resources\Scripts\Modelo\Enemy.cs" />
     <Compile Include="Assets\Resources\Scripts\Modelo\Player.cs" />

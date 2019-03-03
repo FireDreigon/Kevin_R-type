@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class PlayerControll : MonoBehaviour
 {
-    
-    private Player playerBaseStats = new Player(3, 5, 0.2f,BulletType.Basic);
+
+    private Player playerBaseStats = new Player(3, 5, 0.2f, BulletType.Basic);
     public Player currentplayerStats;
-    public float DelayShoot;
+    private float DelayShoot;
     public GameObject Bullet;
+    private float ChargeBeamTime;
+    [HideInInspector]
+    public GameManager gameManager;
     // Use this for initialization
     void Start()
     {
@@ -34,8 +37,23 @@ public class PlayerControll : MonoBehaviour
             transform.position = new Vector2(transform.position.x, -3.7f);
 
         if (Input.GetKeyDown(KeyCode.Space))
+        {
             if (DelayShoot >= currentplayerStats.DelayShoot)
                 Shoot();
+        }
+        else if (Input.GetKey(KeyCode.Space))
+        {
+            ChargeBeamTime += Time.deltaTime;
+            float amount = ChargeBeamTime / currentplayerStats.ChargeBeamTime;
+            gameManager._HUDManager.UpdateChargeBeam(amount);
+        }
+
+        else if (Input.GetKeyUp(KeyCode.Space))
+        {
+            ChargeBeamTime = 0;
+            gameManager._HUDManager.UpdateChargeBeam(ChargeBeamTime);
+        }
+
     }
 
     public void Shoot()

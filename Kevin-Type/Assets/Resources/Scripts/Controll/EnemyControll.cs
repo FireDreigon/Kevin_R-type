@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class EnemyControll : MonoBehaviour {
 
-    private Enemy enemyBaseStats= new Enemy(EnemyType.Stalker);
+    public EnemyType enemyType;
+    public int Lv;
+    private Enemy enemyBaseStats;
     private bool switchDir;
     private float switchTime;
     private GameObject Objective;
     
 	// Use this for initialization
 	void Start () {
-		
+        enemyBaseStats = new Enemy(enemyType);
 	}
 	
 	// Update is called once per frame

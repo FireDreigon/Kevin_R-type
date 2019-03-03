@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
+
 public class Player
 {
 
@@ -13,6 +13,7 @@ public class Player
     public float Speed;
     public BulletType bulletType;
     public float DelayShoot;
+    public float ChargeBeamTime;
 
     public Player (int hp, int speed, float delayShoot, BulletType bulletType)
     {
@@ -20,6 +21,7 @@ public class Player
         Speed = speed;
         DelayShoot = delayShoot;
         this.bulletType = bulletType;
+        ChargeBeamTime = Bullet.ChargeBeamBullet(this.bulletType);
     }
 
 }
